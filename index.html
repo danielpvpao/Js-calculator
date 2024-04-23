@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div id="display"></div>
+    <div class="buttoncontainer">
+        <div class="row">
+            <button id="number1" onclick="setNumber(1)">1</button>
+            <button id="number2" onclick="setNumber(2)">2</button>
+            <button id="number3" onclick="setNumber(3)">3</button>
+            <button id="number4" onclick="setNumber(4)">4</button>
+            <button id="number5" onclick="setNumber(5)">5</button>
+            </div>
+        <div class="row">
+            <button id="number6" onclick="setNumber(6)">6</button>
+            <button id="number7" onclick="setNumber(7)">7</button>
+            <button id="number8" onclick="setNumber(8)">8</button>
+            <button id="number9" onclick="setNumber(9)">9</button>
+            <button id="number10" onclick="setNumber(10)">10</button>
+        </div>
+        <div class="row">
+            <button id="number0" onclick="setNumber(0)">0</button>
+        </div>
+        <div class="Operators">
+            <button id="OperatorPlus" onclick="OperatorPlus()">+</button>
+            <button id="OperatorMinus" onclick="OperatorMinus()">-</button>
+            <button id="OperatorMultiplication" onclick="OperatorMultiplication()">X</button>
+            <button id="OperatorDivision" onclick="OperatorDivision()">/</button>
+            <button id="OperatorRoot" onclick="OperatorRoot()">√</button>
+            <button id="clear" onclick="Clear()">C</button>
+            <button id="Result" onclick="displayResult()">=</button>
+        </div>  
+    </div>
+      
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
