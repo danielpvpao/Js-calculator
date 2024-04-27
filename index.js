@@ -43,13 +43,13 @@ function Calc(){
     if(OldNumber && Operator && Newnumber !== ''){
     switch (Operator)
     {
-        case '+': result = parseInt(OldNumber) + parseInt(Newnumber);
+        case '+': result = parseFloat(OldNumber) + parseFloat(Newnumber);
         break;
-        case '-': result = parseInt(OldNumber -  Newnumber);
+        case '-': result = parseFloat(OldNumber) -  parseFloat(Newnumber);
         break;
-        case 'X': result = parseInt(OldNumber * Newnumber);
+        case 'X': result = parseFloat(OldNumber * Newnumber);
         break;
-        case '/': result = parseInt(OldNumber / Newnumber);
+        case '/': result = parseFloat(OldNumber / Newnumber);
         break;
         case '√': result = Math.pow(OldNumber, 1 / Newnumber);
             result = parseFloat(result.toFixed(2));
@@ -60,6 +60,9 @@ function Calc(){
 }
      
 function Updatedisplay() {
+ if (OldNumber === '' && Operator === '' && Newnumber === '' && result === '') {
+      display.textContent = '0';
+ }
  if(OldNumber == ''){
     display.textContent = ' ' + ' ' + ' '
  }
@@ -78,7 +81,7 @@ function displayResult() {
     Newresult()
 };
 function Clear(){
-    OldNumber = 0;
+    OldNumber = 0
     Operator = ''
     Newnumber = ''
     result = ''
