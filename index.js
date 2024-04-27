@@ -78,7 +78,7 @@ function displayResult() {
     Newresult()
 };
 function Clear(){
-    OldNumber = ''
+    OldNumber = 0;
     Operator = ''
     Newnumber = ''
     result = ''
