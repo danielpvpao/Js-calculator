@@ -16,7 +16,7 @@ box-sizing: border-box;
 }
 .container{
     height: 43.75rem;
-    width: 34rem;
+    max-width: 30rem;
     margin: 0 auto;
     margin-top: 2rem;
     background-color: gray;
@@ -37,9 +37,10 @@ box-sizing: border-box;
     cursor: pointer;
 }
 .row{
+    width: 80%;
     display: flex;
-    gap: 5px;
     justify-content: center;
+    margin: 0 auto;
 }
 .buttoncontainer{
     width: 100%;
@@ -49,8 +50,8 @@ box-sizing: border-box;
 }
 .Operators{
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    margin-left:460px; 
 }
 #clear{
     background-color: #FFD700;
