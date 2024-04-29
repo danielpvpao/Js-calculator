@@ -60,7 +60,7 @@ function Calc(){
 }
      
 function Updatedisplay() {
- if (OldNumber === '' && Operator === '' && Newnumber === '' && result === '') {
+ if (OldNumber === '' && Operator !== '' && Newnumber === '' && result === '') {
       display.textContent = '0';
  }
  if(OldNumber == ''){

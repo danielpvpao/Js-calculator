@@ -5,17 +5,16 @@ box-sizing: border-box;
 }
 #display{
     width: 80%;
-    height: 6rem;
+    height: 8vh;
     margin: 0 auto;
     background-color: #a9a9a9;
     text-align: end;
     margin-top: 40px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .container{
-    height: 43.75rem;
     max-width: 30rem;
     margin: 0 auto;
     margin-top: 2rem;
