@@ -63,16 +63,14 @@ function Updatedisplay() {
  if (OldNumber === '' && Operator !== '' && Newnumber === '' && result === '') {
       display.textContent = '0';
  }
- if(OldNumber == ''){
-    display.textContent = ' ' + ' ' + ' '
- }
  if(OldNumber !== ''){
-    display.textContent = OldNumber + ' ' + ' ';
+    display.textContent = parseInt(OldNumber) + ' ' + ' ';
+    console.log("Pão de queiju")
  }if(OldNumber && Operator !== ''){
-    display.textContent = OldNumber + Operator + ' ';
+    display.textContent = parseInt(OldNumber) + Operator + ' ';
  }
  if(OldNumber && Operator && Newnumber !== ''){
-    display.textContent = OldNumber + Operator + Newnumber;
+    display.textContent = parseInt(OldNumber) + Operator + Newnumber;
  }
 };
  
@@ -81,7 +79,7 @@ function displayResult() {
     Newresult()
 };
 function Clear(){
-    OldNumber = 0
+    OldNumber = '0'
     Operator = ''
     Newnumber = ''
     result = ''
